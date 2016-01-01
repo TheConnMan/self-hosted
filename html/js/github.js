@@ -6,6 +6,10 @@ var repos = [{
 	owner: 'remie',
 	repo: 'YouTransfer',
 	port: 8081
+}, {
+	owner: 'rocketchat',
+	repo: 'rocket.chat',
+	port: 8082
 }];
 
 function renderList() {

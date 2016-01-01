@@ -12,3 +12,13 @@ youtransfer:
   image: remie/youtransfer:stable
   ports:
     - 8081:5000
+
+mongo:
+  image: mongo
+
+rocketchat:
+  image: rocketchat/rocket.chat:latest
+  ports:
+    - 8082:3000
+  links:
+    - mongo:mongo
