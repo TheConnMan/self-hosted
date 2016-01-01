@@ -2,6 +2,10 @@ var repos = [{
 	owner: 'theconnman',
 	repo: 'Transient',
 	port: 8080
+}, {
+	owner: 'remie',
+	repo: 'YouTransfer',
+	port: 8081
 }];
 
 function renderList() {
