@@ -22,3 +22,18 @@ rocketchat:
     - 8082:3000
   links:
     - mongo:mongo
+
+db:
+  image: mysql:latest
+  environment:
+    - MYSQL_DATABASE=streama
+    - MYSQL_USER=streama
+    - MYSQL_PASSWORD=streama
+    - MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+streama:
+  image: dularion/streama
+  links:
+    - db:db
+  ports:
+    - 8083:8080

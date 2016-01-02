@@ -10,6 +10,10 @@ var repos = [{
 	owner: 'rocketchat',
 	repo: 'rocket.chat',
 	port: 8082
+}, {
+	owner: 'dularion',
+	repo: 'streama',
+	port: 8083
 }];
 
 function renderList() {
